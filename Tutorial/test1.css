@@ -120,9 +120,7 @@ table{
 table-layout:fixed;
 }
 
-header, footer{
-width:96vw;
-}
+
 
 td.t1{
 display: block;
@@ -137,13 +135,14 @@ display: block;
 
 td.t3{
 display:block
-width:400px;
+
 }
 
 a {
 text-align:center;
+align-items:center
 padding:9px;
-width:90vw;
+width:89vw;
 }
 
 nav {
@@ -152,6 +151,8 @@ height:169px;
 
 
 }
+
+
 
 
 
