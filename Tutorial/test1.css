@@ -116,52 +116,43 @@ body {
     font-size: 12px;
   }
 
+table{
+table-layout:fixed;
+}
+
 header, footer{
-width:400px;
-margin-left:auto;
-margin-right:auto;
+width:96vw;
 }
 
 td.t1{
 display: block;
+
 }
 
 td.t2{
 display: block;
+
+
+}
+
+td.t3{
+display:block
 width:400px;
-margin-left:auto;
-margin-right:auto;
 }
 
 a {
 text-align:center;
 padding:9px;
-width:379px;
+width:90vw;
 }
 
 nav {
 height:169px;
 }
 
-.content-frame {
-width: 100%;
-height: 100vh;    
-border: none;
-text-align: left;
-}
-
-
-.content-frame {
-width: 100%;
-height: 100vh;    
-border: none;
-text-align: left;
-}
-
-main.content {
-    height:100vh;
 
 }
+
 
 
 
