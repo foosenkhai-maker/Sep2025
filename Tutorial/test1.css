@@ -186,7 +186,7 @@ table-layout:fixed;
 
 td.t1{
 display: block;
-width:95vw;
+
 }
 
 td.t2{
@@ -197,7 +197,7 @@ display: block;
 
 td.t3{
 display:block
-width:100%;
+
 }
 
 .content-frame {
@@ -252,4 +252,5 @@ margin:0px;
 }
 
 }
+
 
