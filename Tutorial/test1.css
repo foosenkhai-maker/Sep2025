@@ -123,11 +123,14 @@ main.content {
     height:100vh;
 }
 
+header, footer{
 
+} 
 
 nav {
 height:50px;
 margin-bottom:5px;
+
 }
 
 
@@ -179,6 +182,7 @@ body {
     font-size: 12px;
   }
 
+
 table{
 table-layout:fixed;
 }
@@ -211,11 +215,16 @@ border:none;
 a {
 text-align:center;
 padding:9px;
-width:41vw;
+width:44vw;
 }
 
 nav {
 height:120px;
+
+}
+
+nav.n1{
+width:363px;
 }
 
 nav {
@@ -230,10 +239,10 @@ flex-wrap: wrap;
 }
 
 
-nav, a.a1{
+a.a1{
 text-align:center;
 padding:9px;
-width:86vw;
+width:95vw;
 }
 
 li{
@@ -252,5 +261,4 @@ margin:0px;
 }
 
 }
-
 
