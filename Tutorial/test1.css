@@ -22,7 +22,7 @@ list-style: none;
 
 a {
 display:block;
-padding:8px 12px;
+padding:8px 0px;
 color: white;
 background:blue;
 text-decoration: none;
@@ -49,7 +49,7 @@ padding: 5px;
 }
 
 td.t3{
-background:lightyellow;
+background:white;
 }
 
 ul {
@@ -112,9 +112,14 @@ main.content {
     height:100vh;
 }
 
+
+
 nav {
-height:100vh;
+height:50px;
+width:100%;
 }
+
+
 
 .content-frame {
 width: 100%;
@@ -123,6 +128,35 @@ text-align: left;
 border:none;
 }
 
+td.t1, td.t2, td.t3{
+display:block;
+
+}
+
+td.t1{
+width:99%
+}
+
+td.t3{
+width:100%vw;
+}
+
+td.t2{
+width:100%vw;
+}
+
+
+nav, ul, li{
+display:flex;
+flex-wrap:nowrap;
+}
+
+a,a.a1{
+height:24px;
+padding:10px 8px;
+margin:5px;
+
+}
 
   }
 
@@ -139,10 +173,9 @@ table-layout:fixed;
 }
 
 
-
 td.t1{
 display: block;
-
+width:95vw;
 }
 
 td.t2{
@@ -153,33 +186,55 @@ display: block;
 
 td.t3{
 display:block
-
+width:100%;
 }
+
+.content-frame {
+width: 100%;
+height: 100vh;    
+text-align: left;
+border:none;
+}
+
 
 a {
 text-align:center;
 padding:9px;
-width:35.5vw;
+width:42vw;
 }
 
 nav {
 height:120px;
 }
 
-nav ul{
+nav {
 display:flex;
-flex-wrap: nowrap;
+flex-wrap: wrap;
+
 }
+
+ul {
+display:flex;
+flex-wrap: wrap;
+}
+
 
 a.a1{
 text-align:center;
 padding:9px;
-width:82vw;
+width:90vw;
 }
 
 li{
 margin:5px;
 }
+
+a,a.a1{
+height:20px;
+padding:3px;
+margin:3px;
+
+
 
 }
 
