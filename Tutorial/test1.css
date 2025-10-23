@@ -14,7 +14,7 @@ font-family:algerian;
 }
 
 nav {
-margin:5px;
+margin:0px;
 width:95px;
 height:500px;
 list-style: none;
@@ -80,12 +80,23 @@ margin: 0px;
     font-size: 16px;
     
   }
+
+nav.n1{
+margin:0px;
+padding:0px;
+height:0px;
+}
+
+
+
 main.content {
     height:100vh;
 }
 
 nav {
 height:100vh;
+margin-left:5px;
+margin-right:5px;
 }
  
 
@@ -116,7 +127,7 @@ main.content {
 
 nav {
 height:50px;
-width:98vw;
+margin-bottom:5px;
 }
 
 
@@ -200,7 +211,7 @@ border:none;
 a {
 text-align:center;
 padding:9px;
-width:43vw;
+width:41vw;
 }
 
 nav {
@@ -219,10 +230,10 @@ flex-wrap: wrap;
 }
 
 
-a.a1{
+nav, a.a1{
 text-align:center;
 padding:9px;
-width:93vw;
+width:86vw;
 }
 
 li{
@@ -234,7 +245,11 @@ height:20px;
 padding:3px;
 margin:3px;
 
+}
 
+nav.n1{
+margin:0px;
+}
 
 }
 
