@@ -116,7 +116,7 @@ main.content {
 
 nav {
 height:50px;
-width:98%;
+width:97%;
 }
 
 
@@ -200,7 +200,7 @@ border:none;
 a {
 text-align:center;
 padding:9px;
-width:38vw;
+width:42vw;
 }
 
 nav {
@@ -222,7 +222,7 @@ flex-wrap: wrap;
 a.a1{
 text-align:center;
 padding:9px;
-width:85vw;
+width:90vw;
 }
 
 li{
