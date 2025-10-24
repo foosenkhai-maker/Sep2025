@@ -170,10 +170,11 @@ display:block
 }
 
 a{
-width:18.3vw;
+width:17.1vw;
 height:30px;
  margin-right:2px;
 padding:1vw;
+font-size:13px;
 }
 
 a.a1{
@@ -254,5 +255,4 @@ margin-bottom:0px;
 }
 
 }
-
 
