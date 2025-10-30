@@ -138,6 +138,10 @@ height:50px;
 
 }
 
+footer{
+height:auto;
+
+}
 
 
 ul, nav, li, a.a1{
@@ -236,6 +240,11 @@ display:flex;
 flex-wrap: wrap;
 margin:15px;
 margin-top:2px;
+}
+
+footer{
+height:auto;
+
 }
 
 a.a1{
