@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<link rel=icon href=./image/picture.jpg type=image/jpg>
+<script>
+function validateForm(){
+//to validate text - do not allow empty
+let x = document.MyFirstForm.fname.value;
+if (x==""){
+alert("Please provide your First Name!");
+return false;
+}
+
+//to validate text - do not allow alphabet characters
+let y = document.MyFirstForm.lname.value;
+var letters=/^[A-Za-z]/;
+if (!y.match(letters))
+{
+alert("Please input alphabet charcters for Last Name.");
+return false;
+}
+
+//to validate radio button - must select
+if((MyFirstForm.gender[0].checked==false)&&(MyFirstForm.gender[1].checked==false))
+{
+alert("Please choose Gender:Male or Female");
+return false;
+}
+
+}
+</script>
+
+<style>
+td.one{
+background:black;
+color:white;
+}
+
+td.two{
+background:grey;
+}
+
+td.title{
+background:lightyellow;
+}
+
+</style>
+
+</head>
+
+<body topmargin=50>
+<center>
+<form name=MyFirstForm onsubmit="return validateForm()">
+<br>
+<table align=center bgcolor=powderblue width=850px height=500px>
+<tr>
+<td class="title" colspan=2 align=center>
+<font size=5px color=grey>Personal details:</font>
+<br><br>
+</td>
+</tr>
+
+<tr>
+<td class="one">
+First Name:
+</td>
+<td>
+<input type=text name=fname size=40 maxlength=5>
+</td>
+</tr>
+<br>
+<tr>
+<td class="one">
+Last Name:
+</td>
+<td>
+<input type =text name=lname placeholder='Last name' autofocus>
+</td>
+</tr>
+<tr>
+<td class="one">
+Gender:
+</td>
+<td>
+<input type= radio name= gender value= Male>Male
+<input type= radio name= gender value= Female>Female
+</td>
+</tr>
+<tr>
+<td class="one">
+
+Choose your favorite subjects:<br>
+</td>
+<td>
+<input type= checkbox name=fav_sub value=DCS4103>DCS4103
+<input type= checkbox name=fav_sub value=DCS3003>DCS3003
+<input type= checkbox name=fav_sub value=MST1003>MST1003
+<input type= checkbox name=fav_sub value=MST2003>MST2003
+</td>
+</tr>
+<tr>
+<td class="one">
+Address:
+</td>
+<td>
+<textarea rows=4 cols=30 name=address></textarea>
+</td>
+</tr>
+<tr>
+<td class="one">
+Date of birth:
+</td>
+<td>
+<input type=date name=dob min=2000-01-01 max=2005-12-31>
+</td>
+</tr>
+<tr>
+<td class="one">
+Login password:
+</td>
+<td>
+<input type= password name=loginpass minlength=4 maxlength=4>
+</td>
+</tr>
+<tr>
+<td class="one">
+Course:
+</td>
+<td>
+<select>
+<option value="0">-List of Course-</option>
+<optgroup label="Diploma In Computer Science">
+<option value="DCS_S1">Semester 1</option>
+<option value="DCS_S2">Semester 2</option>
+<option value="DCS_S3">Semester 3</option>
+<option value="DCS_S4">Semester 4</option>
+<option value="DCS_S5">Semester 5</option>
+<option value="DCS_S6">Semester 6</option>
+</optgroup>
+
+<option value="DIB">Diploma in Bussiness</option>
+<option value="DAS">Diploma in Airline Services</option>
+</select>
+</td>
+</tr>
+<tr align=center>
+<td class="two" colspan=2>
+<br>
+<input type=submit value=Submit>
+<input type=reset value=Reset>
+</form>
+</td>
+</tr>
+</table>
+</center></body></html>
