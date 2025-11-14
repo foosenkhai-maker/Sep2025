@@ -1,0 +1,15 @@
+td.personal{
+border:2px solid black;
+
+}
+table.full{
+background-color:lightblue;
+border-spacing:15px;
+}
+th{
+font-size:20px;
+}
+
+td.title{
+color:darkblue;
+}
