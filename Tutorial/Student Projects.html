@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<link rel=icon href=./image/picture.jpg type=image/jpg>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+img{
+height:37%;
+width:37%;
+border:5px solid grey;
+}
+
+button.prevbtn, button.nextbtn{
+padding:1%;
+background:darkblue;
+color:white;
+}
+
+h1.photo{
+font-size:4.7vw;
+color:darkblue;
+}
+
+header{
+background:darkblue;
+color:white;
+padding:20px;
+font-size:25px;
+font-family:none;
+}
+
+ul{
+list-style-type:disc;
+}
+
+body{
+color:darkblue;
+font-family:century;
+font-size:20px;
+}
+</style>
+</head>
+<body>
+<header>About our projects</header>
+<ol>
+<li><b>Interactive Story Maker</b></li>
+<br>
+<ul>
+<li><i>What:</i></li>
+Students create branching stories with logic and visuals.
+<br><br>
+<li><i>Skills:</i></li>
+Sequencing, event-driven thinking, storytelling
+</ul>
+<br>
+<hr>
+<li><b>Personal Website Portfolio</b></li>
+<br>
+<ul>
+<li><i>What:</i></li>
+Learners design a simple website to present their projects.
+<br><br>
+<li><i>Skills:</i></li>
+HTML, CSS, layout, digital presentation.
+</ul>
+<br>
+<hr>
+<li><b>Smart Plant Monitor</b></li>
+<br>
+<ul>
+<li><i>What:</i></li>
+A microcontroller sensor project that reports soil moisture.
+<br><br>
+<li><i>Skills:</i></li>
+Basic electronics, data collection, troubleshooting.
+</ul>
+<br>
+<hr>
+<li><b>2D Platformer Game</b></li>
+<br>
+<ul>
+<li><i>What:</i></li>
+Team project to design levels, mechanics, and scoring.
+<br><br>
+<li><i>Skills:</i></li>
+Game logic, collaboration, iterative testing.
+</ul>
+<br>
+<hr>
+<li><b>Data for Good Mini Study</b></li>
+<br>
+<ul>
+<li><i>What:</i></li>
+Students collect simple data, visualize findings, and present conclusions.
+<br><br>
+<li><i>Skills:</i></li>
+Data literacy, charts, critical thinking.
+</ul>
+</ol>
+<hr>
+
+<center>
+<h1 class=photo><code>Student projects preview</code></h1>
+
+<button class="prevbtn" onclick="changephoto(-1)">←</button>
+<img src="https://ik.imagekit.io/upgrad1/abroad-images/imageCompo/images/Line_follower_robot0KYPD1.png?pr-true" alt="projects" Id=image>
+<button class="nextbtn" onclick="changephoto(1)">→</button>
+</div>
+</center>
+<br>
+<hr>
+<h5>Each project includes a short reflection prompt so students record what they learned, challenges faced, and next steps.</h5>
+<script>
+const photos=["https://ik.imagekit.io/upgrad1/abroad-images/imageCompo/images/Line_follower_robot0KYPD1.png?pr-true", "https://ik.imagekit.io/upgrad1/abroad-images/imageCompo/images/Bipedal_robotOZTO4B.png?pr-true", "https://ik.imagekit.io/upgrad1/abroad-images/imageCompo/images/Maze_solver_robotGY44ZY.png?pr-true", "https://ik.imagekit.io/upgrad1/abroad-images/imageCompo/images/Firefighter_robotIMGH7Y.png?pr-true", "https://ik.imagekit.io/upgrad1/abroad-images/imageCompo/images/Solar_robotBO66VZ.png?pr-true", "https://ik.imagekit.io/upgrad1/abroad-images/imageCompo/images/ExoskeletonT8IM1Q.png?pr-true"];
+
+const imgelement= document.getElementById("image");
+
+let currentphotocount=0;
+
+function changephoto(direction){
+currentphotocount+=direction;
+
+if (currentphotocount >= photos.length){
+currentphotocount=0;
+}
+
+else if (currentphotocount < 0){
+currentphotocount=photos.length-1;
+}
+
+imgelement.src=photos[currentphotocount];
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+<link rel=icon href=./image/picture.jpg type=image/jpg>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function validateForm(){
+//to validate text - do not allow empty
+if(document.MyFirstForm.fname.value=="")
+{
+alert("Please provide your First Name!");
+return false;
+}
+
+let x = document.MyFirstForm.fname.value;
+var letters=/^[A-Za-z]/;
+if (!x.match(letters))
+{
+alert("Please input alphabet charcters for your First Name.");
+return false;
+}
+
+if(document.MyFirstForm.lname.value=="")
+{
+alert("Please provide your Last Name!");
+return false;
+}
+
+let y = document.MyFirstForm.lname.value;
+var letters=/^[A-Za-z]/;
+if (!y.match(letters))
+{
+alert("Please input alphabet charcters for your Last Name.");
+return false;
+}
+
+
+//to validate radio button - must select
+if((MyFirstForm.gender[0].checked==false)&&(MyFirstForm.gender[1].checked==false))
+{
+alert("Please choose Gender: Male or Female");
+return false;
+}
+
+if(document.MyFirstForm.pfname.value=="")
+{
+alert("Please provide your Parent/Guardian First Name!");
+return false;
+}
+
+let p = document.MyFirstForm.pfname.value;
+var letters=/^[A-Za-z]/;
+if (!p.match(letters))
+{
+alert("Please input alphabet charcters for your Parent/Guardian First Name.");
+return false;
+}
+
+if(document.MyFirstForm.plname.value=="")
+{
+alert("Please provide your Parent/Guardian Last Name!");
+return false;
+}
+
+let g = document.MyFirstForm.plname.value;
+var letters=/^[A-Za-z]/;
+if (!g.match(letters))
+{
+alert("Please input alphabet charcters for your Parent/Guardian Last Name.");
+return false;
+}
+
+var checkboxes=document.getElementsByName("fav_sub");
+var isChecked= false;
+for (var i=0; i<checkboxes.length; i++){
+if (checkboxes[i].checked){
+isChecked=true;
+break;
+}
+}
+
+if(!isChecked){
+alert("Please select spoken language.");
+return false;
+}
+
+if(document.MyFirstForm.address.value=="")
+{
+alert("Please provide your address.");
+return false;
+}
+
+if(document.MyFirstForm.address.value=="")
+{
+alert("Please provide your address.");
+return false;
+}
+
+
+if(!document.MyFirstForm.dob.value)
+{
+alert("Please select day of birth.");
+return false;
+}
+
+if(document.MyFirstForm.ic.value=="")
+{
+alert("Please enter your IC NO.");
+return false;
+}
+
+let c = document.MyFirstForm.ic.value;
+var numbers=/^[0-9]/;
+if (!c.match(numbers))
+{
+alert("Please make sure your IC NO. is correct");
+return false;
+}
+
+if(document.MyFirstForm.email.value=="")
+{
+alert("Please enter your email.");
+return false;
+}
+
+if(document.MyFirstForm.list.value=="")
+{
+alert("Please select a course.");
+return false;
+}
+
+
+}
+</script>
+
+<style>
+
+
+body{
+background:lightblue;
+height:100px;
+}
+
+header{
+background-color:darkblue;
+padding:15px;
+}
+</style>
+</head>
+
+<body>
+<center>
+<header><font size=5px color=white>Personal details</font></header>
+<form name=MyFirstForm onsubmit="return validateForm()">
+<br>
+<b>Student's Name</b>
+<br>
+<input type=text name=fname placeholder='First name' autofocus>
+<input type =text name=lname placeholder='Last name' autofocus>
+<br>
+<br>
+<u><b>Gender</b></u>
+<br>
+<table>
+<tr>
+<td>
+<input type= radio name= gender value= Male>Male
+</td>
+<tr>
+<td>
+<input type= radio name= gender value= Female>Female
+</td>
+</tr>
+</table>
+<br>
+<b>Parent/Guardian Name</b>
+<br>
+<input type=text name=pfname placeholder='First name' autofocus>
+<input type =text name=plname placeholder='Last name' autofocus>
+<br>
+<br>
+<u><b>Spoken language</b></u>
+<table>
+<tr>
+<td>
+<input type= checkbox name=fav_sub value="English"> English
+</td>
+<tr>
+<td>
+<input type= checkbox name=fav_sub value="Malay"> Malay
+</td>
+<tr>
+<td>
+<input type= checkbox name=fav_sub value="Mandarin"> Mandarin
+</td>
+<tr>
+<td>
+<input type= checkbox name=fav_sub value="Tamil"> Tamil
+</td>
+</tr>
+</table>
+<br>
+<b>Address</b>
+<br>
+<textarea placeholder='Enter your address' autofocus rows=4 cols=30 name=address></textarea>
+<br>
+<br>
+<b>Date of birth</b>
+<br>
+<input type=date name=dob min=2000-01-01>
+<br>
+<br>
+<b>IC No.</b>
+<br>
+<input type= password name=ic minlength=12 maxlength=12 placeholder='Enter your IC No.' autofocus>
+<br>
+<br>
+<b>Email</b>
+<br>
+<input type=email name=email placeholder='Enter your Email' autofocus>
+<br>
+<br>
+<b>Course</b>
+<br>
+<select name=list>
+<option value="" align=center>-List of Course-</option>
+<optgroup label="Primary Years">
+<option value="Digital Foundations">Digital Foundations</option>
+<option value="Block Coding Studio">Block Coding Studio</option>
+<option value="Creative Digital Art">Creative Digital Art</option>
+<option value="Logic & Games">Logic & Games</option>
+<option value="Mini Makers: Hardware Basics">Hardware Basics</option>
+</optgroup>
+
+<optgroup label="Lower Secondary">
+<option value="Intro to Python">Intro to Python</option>
+<option value="Web Builders: HTML & CSS">Web Builders: HTML & CSS</option>
+<option value="Physical Computing with Microcontrollers">Physical Computing</option>
+<option value="Game Design Fundamentals">Game Design Fundamentals</option>
+<option value="Digital Citizenship & Online Safety">Digital Citizenship & Online Safety</option>
+</optgroup>
+
+<optgroup label="Upper Secondary">
+<option value="Intermediate Python & Data Basics">Intermediate Python & Data Basics</option>
+<option value="Full-Stack Web Basics">Full-Stack Web Basics</option>
+<option value="Mobile App Prototyping">Mobile App Prototyping</option>
+<option value="Intro to Cybersecurity">Intro to Cybersecurity</option>
+<option value="Capstone Project">Capstone Project</option>
+</optgroup>
+
+<optgroup label="Enrichment & Holiday Workshops">
+<option value="Robotics Lab">Robotics Lab</option>
+<option value="Creative Coding with p5.js">Creative Coding with p5.js</option>
+<option value="Cloud & Basics of AI">Cloud & Basics of AI</option>
+<option value="Teacher Training: Integrating Computing">Integrating Computing</option>
+</optgroup>
+</select>
+
+<br>
+<br>
+<input type=submit value=Submit>
+<input type=reset value=Reset>
+<br>
+<br>
+</form>
+<script>
+const today=new Date().toISOString().split('T')[0];
+
+if(document.MyFirstForm && document.MyFirstForm.dob )
+{
+document.MyFirstForm.dob.max= today;
+}
+</script>
+</center></body></html>
+
