@@ -2,6 +2,29 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+function changeContent(newContent){
+const tochange=document.getElementById("one");
+tochange.innerHTML=newContent;
+}
+function changeContentTwo(newContent){
+const tochange2=document.getElementById("two");
+tochange2.innerHTML=newContent;
+}
+function changeContentThree(newContent){
+const tochange3=document.getElementById("three");
+tochange3.innerHTML=newContent;
+}
+
+function changeContentFour(newContent){
+const tochange4=document.getElementById("four");
+tochange4.innerHTML=newContent;
+}
+
+
+</script>
+
 <style>
 
 body{
@@ -31,14 +54,28 @@ height:5px;
 background-color:black;
 }
 
+button{
+background:darkblue;
+color:white;
+}
+
+a.top{
+padding:10px;
+background:darkblue;
+color:white;
+font-size:15px;
+text-decoration:none;
+border-radius:10px;
+}
+
 </style>
 </head>
 <body>
-
+<a name="back">
 <header>
 Our programmes
 </header>
-
+</a>
 <h1>
 Clear, modular programmes designed by age and skill level with measurable learning goals.
 </h1>
@@ -53,6 +90,33 @@ Clear, modular programmes designed by age and skill level with measurable learni
 <li><b>Examples:</b></li> 
 <p><code>Interactive stories, simple animations, and logic puzzles.</code></p>
 </ul>
+<b>Course:</b> 
+<br>
+<button type="button"
+onclick="changeContent(
+'- Intro to computers, keyboarding, safe internet habits; Duration: 10 weeks; Prereq: None.'
+);">Digital Foundations (Term)</button>
+
+<button type="button"
+onclick="changeContent(
+'- Scratch/Snap projects: animations, interactive stories; Duration: 10 weeks; Prereq: None.'
+);">Block Coding Studio (Term)</button>
+
+<button type="button"
+onclick="changeContent(
+'- Intro to pixel art, simple animation, storytelling; Duration: 6–8 weeks; Prereq: None.'
+);">Creative Digital Art (Term)</button>
+
+<button type="button"
+onclick="changeContent(
+'- Puzzles, sequencing, unplugged computing activities; Duration: 6 weeks; Prereq: None.'
+);">Logic & Games (Short)</button>
+
+<button type="button"
+onclick="changeContent(
+'- Intro to simple electronics and sensors (safe, guided kits); Duration: 6 weeks; Prereq: None.'
+);">Mini Makers: Hardware Basics (Short)</button>
+<h5 id="one">-</h5>
 
 <hr>
 
@@ -64,6 +128,33 @@ Clear, modular programmes designed by age and skill level with measurable learni
 <li><b>Examples:</b></li> 
 <p><code>HTML/CSS mini-sites, Python fundamentals, microcontroller lamp projects.</code></p>
 </ul>
+<b>Course:</b> 
+<br>
+<button type="button"
+onclick="changeContentTwo(
+'- Syntax, variables, control flow, small scripts; Duration: 12 weeks; Prereq: Basic digital literacy.'
+);">Intro to Python (Term)</button>
+
+<button type="button"
+onclick="changeContentTwo(
+'- Create personal websites and portfolios; Duration: 10 weeks; Prereq: None.'
+);">Web Builders: HTML & CSS (Term)</button>
+
+<button type="button"
+onclick="changeContentTwo(
+'- Micro:bit/Arduino basics, sensors, LED projects; Duration: 10–12 weeks; Prereq: None.'
+);">Physical Computing with Microcontrollers (Term)</button>
+
+<button type="button"
+onclick="changeContentTwo(
+'- 2D game logic, level design, basic physics; Duration: 10 weeks; Prereq: Block coding or teacher approval.'
+);">Game Design Fundamentals (Term)</button>
+
+<button type="button"
+onclick="changeContentTwo(
+'- Privacy, cyberbullying, responsible social media use; Duration: 4–6 weeks; Prereq: None.'
+);">Digital Citizenship & Online Safety (Short)</button>
+<h5 id="two">-</h5>
 
 <hr>
 
@@ -75,16 +166,68 @@ Clear, modular programmes designed by age and skill level with measurable learni
 <li><b>Examples:</b></li> 
 <p><code>Mobile app prototypes, simple databases, network basics, capstone projects.</code></p>
 </ul>
+<b>Course:</b> 
+<br>
+<button type="button"
+onclick="changeContentThree(
+'- Data structures, simple data analysis, visualization; Duration: 12 weeks; Prereq: Intro to Python or equivalent.'
+);">Intermediate Python & Data Basics (Term)</button>
+
+<button type="button"
+onclick="changeContentThree(
+'- HTML/CSS, JavaScript, simple backend concepts; deploy a portfolio site; Duration: 12–14 weeks; Prereq: Web Builders or equivalent.'
+);">Full-Stack Web Basics (Term)</button>
+
+<button type="button"
+onclick="changeContentThree(
+'- Design and prototype simple apps using App Inventor/Flutter intro; Duration: 10–12 weeks; Prereq: Programming experience recommended.'
+);">Mobile App Prototyping (Term)</button>
+
+<button type="button"
+onclick="changeContentThree(
+'- Threat awareness, basic network concepts, safe practices; Duration: 6–10 weeks; Prereq: None.'
+);">Intro to Cybersecurity (Short/Term)</button>
+
+<button type="button"
+onclick="changeContentThree(
+'- Student-driven project with mentor guidance; portfolio-ready; Duration: Term/Year; Prereq: Instructor approval.'
+);">Capstone Project (Term or Year-long)</button>
+<h5 id="three">-</h5>
+
 <hr>
 
 <strong>Enrichment Workshops</strong>
 
-<p><code>- Short courses in robotics, game design, cloud basics, and creative coding for after school or holiday sessions.</code><p>
+<p><code>- Short courses in robotics, game design, cloud basics, and creative coding for after school or holiday sessions.</code></p>
 
 <p><code>- Teacher training sessions to help classroom teachers integrate computing into other subjects.</code><p>
 
-</ol>
+<b>Course:</b>
+<br>
+<button type="button"
+onclick="changeContentFour(
+'- Build and program simple robots; teamwork challenges; Duration: 1–2 weeks (holiday).'
+);">Robotics Lab (Short)</button>
 
+<button type="button"
+onclick="changeContentFour(
+'- Generative art and interactive visuals; Duration: 1–4 weeks.'
+);">Creative Coding with p5.js (Short)</button>
+
+<button type="button"
+onclick="changeContentFour(
+'- High-level cloud concepts and simple ML demos; Duration: 1–2 weeks; Prereq: Lower/Upper Secondary recommended.'
+);">Cloud & Basics of AI (Short)</button>
+
+<button type="button"
+onclick="changeContentFour(
+'-  Practical lesson plans and classroom activities; Duration: 1 day or short course.'
+);">Teacher Training: Integrating Computing (One-day/Short)</button>
+<h5 id="four">-</h5>
+</ol>
+<center>
+<a href="#back" class=top>Back to top</a>
+</center>
 </body>
 </html>
 
