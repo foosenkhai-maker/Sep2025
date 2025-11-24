@@ -1,0 +1,14 @@
+body{
+color:red;
+background:lightblue;
+text-align:center;
+}
+
+button{
+background:yellow;
+color:darkblue;
+}
+
+table{
+border-spacing:10px;
+}
